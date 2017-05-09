@@ -50,3 +50,7 @@ dlib/src/main/jniLibs
 # build folders
 app/build
 dlib/build
+.idea
+gradlew
+gradlew.bat
+gradle/wrapper

@@ -14,11 +14,11 @@ public class HeadPoseDetector {
     protected static boolean initializing = false;
 
     static {
-        try {
+//        try {
             System.loadLibrary("head_pose_det"); // Load native library
-        } catch (UnsatisfiedLinkError e) {
-            Log.d(TAG, " ### Native library not found! ###");
-        }
+//        } catch (UnsatisfiedLinkError e) {
+//            Log.d(TAG, " ### Native library not found! ### "+e);
+//        }
     }
 
     public static void init(String model_path, int alg_mode, float[] intrinsics, float[] distortions) {

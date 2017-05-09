@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.beraldo.hpe"
         minSdkVersion 21
-        targetSdkVersion 24
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -24,7 +24,6 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
@@ -47,7 +46,7 @@ dependencies {
 
     compile project(':dlib')
 
-    compile "com.google.android.gms:play-services:${rootProject.ext.androidPlayServicesVersion}"
+//    compile "com.google.android.gms:play-services:${rootProject.ext.androidPlayServicesVersion}"
 }
 
 apply plugin: 'com.android.application'
